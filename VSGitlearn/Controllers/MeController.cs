@@ -49,7 +49,7 @@ namespace VSGitlearn.Controllers
         public GetViewModel Set()
         {
             var user = UserManager.FindById(User.Identity.GetUserId());
-            return new GetViewModel() { Hometown = "changed code" };
+            return new GetViewModel() { Hometown = "changed code from branch 1" };
         }
         
         
