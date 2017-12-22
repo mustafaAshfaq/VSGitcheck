@@ -45,5 +45,13 @@ namespace VSGitlearn.Controllers
             var user = UserManager.FindById(User.Identity.GetUserId());
             return new GetViewModel() { Hometown = user.Hometown };
         }
+         // set api/Me changed code
+        public GetViewModel Set()
+        {
+            var user = UserManager.FindById(User.Identity.GetUserId());
+            return new GetViewModel() { Hometown = "changed code" };
+        }
+        
+        
     }
 }
